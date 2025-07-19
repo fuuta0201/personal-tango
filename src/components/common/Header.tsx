@@ -81,6 +81,15 @@ export default function Header() {
                       tabIndex={-1}
                       className="block px-4 py-2 text-sm text-gray-700"
                     >
+                      Dashboard
+                    </Link>
+                    <Link
+                      id="user-menu-item-2"
+                      role="menuitem"
+                      href="#"
+                      tabIndex={-1}
+                      className="block px-4 py-2 text-sm text-gray-700"
+                    >
                       Sign out
                     </Link>
                   </div>
