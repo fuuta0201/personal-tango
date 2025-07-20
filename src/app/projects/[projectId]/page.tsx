@@ -1,7 +1,10 @@
+// UI
+import Heading from "./_components/Heading";
+
 export default function Page() {
   return (
-    <main>
-      <h1>Project Detail</h1>
+    <main className="container mx-auto min-h-full">
+      <Heading />
     </main>
   );
 }
