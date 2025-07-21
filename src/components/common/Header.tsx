@@ -5,10 +5,10 @@ import { useState } from "react";
 export default function Header() {
   const [isOpenDropDown, setIsOpenDropDown] = useState<boolean>(false);
   return (
-    <header>
+    <header className="w-full max-w-full fixed top-0 bg-white z-50 border-b">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <div className="shrink-0 w-10">
               <svg
                 viewBox="0 0 100 100"
@@ -39,10 +39,10 @@ export default function Header() {
                 />
               </svg>
             </div>
-            <p className="text-2xl font-bold tracking-tight text-gray-900 ml-8">
+            <p className="text-2xl font-bold tracking-tight text-gray-900 ml-4 md:ml-8">
               Personal Tango
             </p>
-          </div>
+          </Link>
           <div>
             <div className="ml-4 flex items-center md:ml-6">
               {/* <!-- Profile dropdown --> */}

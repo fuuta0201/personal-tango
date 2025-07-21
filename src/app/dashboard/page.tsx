@@ -5,17 +5,17 @@ import DashboardTangoCard from "./_components/DashboardTangoCard";
 
 export default function Page() {
   return (
-    <main>
+    <main className="pt-16">
       <div className="min-h-full">
         <div>
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <div className="mx-auto md:max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">
               Dashboard
             </h1>
           </div>
         </div>
         <div>
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-full md:max-w-7xl px-4 py-6 md:px-8">
             <ul className="flex flex-col md:grid md:grid-cols-3 md:justify-center gap-8">
               {Array(20)
                 .fill(0)
