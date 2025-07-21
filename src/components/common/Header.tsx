@@ -77,7 +77,7 @@ export default function Header() {
                     <Link
                       id="user-menu-item-2"
                       role="menuitem"
-                      href="#"
+                      href="/dashboard"
                       tabIndex={-1}
                       className="block px-4 py-2 text-sm text-gray-700"
                     >
