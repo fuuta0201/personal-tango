@@ -2,16 +2,42 @@ import Link from "next/link";
 
 // UI
 import DashboardTangoCard from "./_components/DashboardTangoCard";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 export default function Page() {
   return (
     <main className="pt-16">
       <div className="min-h-full">
         <div>
-          <div className="mx-auto md:max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <div className="mx-auto md:max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex justify-between items-center">
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">
               Dashboard
             </h1>
+            <Dialog>
+              <DialogTrigger asChild>
+                <button
+                  className="w-36 col-start-1 row-start-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                >
+                  プロジェクト作成
+                </button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Are you absolutely sure?</DialogTitle>
+                  <DialogDescription>
+                    This action cannot be undone. This will permanently delete your account
+                    and remove your data from our servers.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
         <div>
