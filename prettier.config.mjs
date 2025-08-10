@@ -1,4 +1,4 @@
-export default config = {
+export default {
   plugins: ["prettier-plugin-tailwindcss"],
   semi: true,
   singleQuote: true,
